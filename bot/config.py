@@ -12,7 +12,7 @@ class Telegram:
     SESSION_STRING = getenv("SESSION_STRING", "")
     BASE_URL = getenv("BASE_URL")
     DATABASE_URL = getenv("DATABASE_URL")
-    AUTH_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002005429500"))
+    AUTH_CHANNEL = getenv("AUTH_CHANNEL", "-1002005429500")
     THEME = getenv("THEME", "quartz").lower()
     USERNAME = getenv("USERNAME", "admin")
     PASSWORD = getenv("PASSWORD", "admin")
